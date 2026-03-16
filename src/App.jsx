@@ -429,7 +429,7 @@ function App() {
 
             <motion.div style={{ display: 'flex', justifyContent: 'center', position: 'relative' }}>
                <div className="profile-container">
-                  <img src="profile2.png" onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=500&auto=format&fit=crop&q=60" }} alt="Mayank Mishra" className="profile-img" />
+                  <img src="./profile2.png" onError={(e) => { e.target.src = "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=500&auto=format&fit=crop&q=60" }} alt="Mayank Mishra" className="profile-img" />
                </div>
             </motion.div>
           </motion.div>
