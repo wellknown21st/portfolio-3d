@@ -417,7 +417,7 @@ function App() {
               </h1>
               <p style={{ fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', color: 'var(--text)', marginBottom: '2.5rem', fontWeight: 500 }}>
                 B.Tech Student & Developer <br/>
-                Competitive Programmer | AI/ML 
+                Competitive Programmer | AI/ML Enthusiast
               </p>
               <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
                 <a href="#contact" className="btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>📞 Contact Me</a>
