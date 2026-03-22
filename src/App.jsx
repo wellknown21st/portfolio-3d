@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import profile from "./file_0000000015a47208aff998e4a24528a4.png";
 import { TypeAnimation } from 'react-type-animation';
-// -------------------------------------------------------------
+// ------------------------------------------------------------
 // ENHANCED 3D ENVIRONMENT COMPONENT
 // -------------------------------------------------------------
 
