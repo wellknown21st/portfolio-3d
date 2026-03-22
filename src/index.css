@@ -9,6 +9,7 @@
   --glass-bg: rgba(10, 10, 15, 0.7);
   --glass-border: rgba(255, 255, 255, 0.1);
   --nav-blur: 24px;
+  --primary1:#ff758f;
 }
 
 [data-theme="light"] {
@@ -19,6 +20,7 @@
   --text-muted: #546e7a;
   --glass-bg: rgba(255, 255, 255, 0.75);
   --glass-border: rgba(255, 255, 255, 0.9);
+  --primary1:#ff9800;
 }
 
 * {
@@ -153,14 +155,14 @@ a, button, .btn-primary, .theme-toggle-btn {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  border: 5px solid var(--primary);
+  border: 5px solid var(--primary1);
   object-fit: cover;
   position: relative;
   z-index: 2;
   transition: all 0.5s ease;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
 }
-.profile-container::before {
+/* .profile-container::before {
   content: '';
   position: absolute;
   inset: -15px;
@@ -173,7 +175,7 @@ a, button, .btn-primary, .theme-toggle-btn {
 @keyframes profilePulse {
   0%, 100% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.05); opacity: 0.8; }
-}
+} */
 
 .mobile-nav {
   display: none;
