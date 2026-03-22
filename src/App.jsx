@@ -8,6 +8,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import profile from "./file_0000000015a47208aff998e4a24528a4.png";
+import { TypeAnimation } from 'react-type-animation';
 // -------------------------------------------------------------
 // ENHANCED 3D ENVIRONMENT COMPONENT
 // -------------------------------------------------------------
@@ -410,18 +411,46 @@ function App() {
             transition={{ duration: 1 }}
             style={{ width: '100%', display: 'flex', flexWrap: 'wrap-reverse', alignItems: 'center', justifyContent: 'center', gap: '6rem', pointerEvents: 'auto', zIndex: 2 }}
           >
-            <motion.div style={{ maxWidth: '600px', flex: '1 1 300px', scale: scaleOp, transformOrigin: "left center" }}>
-              <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '1rem' }}>
-                Hi, I'm <span className="heading-gradient">Mayank</span> <br/>
-                Mishra.
-              </h1>
-              <p style={{ fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', color: 'var(--text)', marginBottom: '2.5rem', fontWeight: 500 }}>
-                B.Tech Student & Developer <br/>
-                Competitive Programmer | AI/ML Enthusiast
+          <motion.div 
+              style={{ 
+                maxWidth: '600px', 
+                flex: '1 1 300px', 
+                scale: scaleOp, 
+                transformOrigin: "left center" 
+              }}
+            >
+            
+              {/* ✅ First line */}
+             <h1 style={{ fontSize: 'clamp(3rem, 8vw, 5rem)', fontWeight: 800, lineHeight: 1.1, marginBottom: '1rem' }}>
+                            Hi, I'm <span className="heading-gradient">Mayank</span> <br/>
+                            Mishra.
+                          </h1>
+              
+            
+              {/* ✅ Second line */}
+              <p style={{ 
+                fontSize: 'clamp(1.2rem, 3vw, 1.8rem)', 
+                color: 'var(--text)', 
+                marginBottom: '2.5rem', 
+                fontWeight: 500,
+                minHeight: '2.5em'   // 🔥 reserve space for 2 lines
+              }}>
+                <TypeAnimation
+                  sequence={[
+                    
+                    "B.Tech Student.", 1500,
+                    "Software Developer.", 1500,
+                    "Competitive Programmer.", 2000,
+                    "AI/ML Enthusiast.", 2000,
+                  ]}
+                  speed={50}
+                  repeat={Infinity}
+                  cursor={false}
+                />
               </p>
               <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
                 <a href="#contact" className="btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>📞 Contact Me</a>
-                <a href="https://drive.google.com/file/d/1DILhcOEsWC0OvKR_a9enwK7h6pHa_Ju1/view?usp=drivesdk" target="_blank" rel="noreferrer" className="btn-primary" style={{ background: 'transparent', border: '2px solid var(--primary)', color: 'var(--text)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <a href="https://drive.google.com/file/d/1ndhia5httF7s4rmpacW1z8b160u8zxz_/view?usp=drive_link" rel="noreferrer" className="btn-primary" style={{ background: 'transparent', border: '2px solid var(--primary)', color: 'var(--text)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   <FiFileText /> View Resume
                 </a>
               </div>
