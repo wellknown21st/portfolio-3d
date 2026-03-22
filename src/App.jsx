@@ -7,7 +7,7 @@ import * as THREE from 'three';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import profile from "./profile2.png";
+import profile from "./file_0000000015a47208aff998e4a24528a4.png";
 // -------------------------------------------------------------
 // ENHANCED 3D ENVIRONMENT COMPONENT
 // -------------------------------------------------------------
@@ -345,7 +345,7 @@ const ProjectCard = ({ title, desc, tech, link, github }) => {
 
 function App() {
   // Start in Light mode by default as requested
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
   const formRef = useRef();
   
   const { scrollYProgress } = useScroll();
