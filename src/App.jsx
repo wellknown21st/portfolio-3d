@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect, useMemo } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Stars, Float, MeshDistortMaterial } from '@react-three/drei';
 import { motion, useMotionValue, useTransform, useScroll } from 'framer-motion';
-import { FiGithub, FiExternalLink, FiLinkedin, FiMail, FiMoon, FiSun, FiCode, FiAward, FiStar, FiTrendingUp, FiHome, FiUser, FiBriefcase } from 'react-icons/fi';
+import { FiGithub, FiExternalLink, MdOutlineLiveTv , FiLinkedin, FiMail, FiMoon, FiSun, FiCode, FiAward, FiStar, FiTrendingUp, FiHome, FiUser, FiBriefcase } from 'react-icons/fi';
 import * as THREE from 'three';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
@@ -568,7 +568,7 @@ function App() {
               title="🌾 Farm Connect Platform" 
               desc="A full-stack agricultural platform connecting farmers directly to buyers, ensuring fair pricing, real-time market offers, and an admin verified secure ecosystem."
               tech={['React', 'Node.js', 'MongoDB', 'Sockets']}
-              github="https://github.com/wellknown21st"
+             MdOutlineLiveTv="https://farm-connect-henna.vercel.app/"
             />
             <ProjectCard 
               title="🤖 YouTube Summarizer Bot" 
