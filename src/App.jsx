@@ -558,27 +558,24 @@ function App() {
           <h2 className="heading-gradient" style={{ fontSize: '3rem', marginBottom: '4rem', textAlign: 'center' }}>Featured Projects</h2>
           
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '3rem', justifyContent: 'center' }}>
-            const projects = [
-                {
-                  title: "🚀 ML Facial Recognition",
-                  desc: "Spearheaded hackathon team...",
-                  tech: ['Python', 'OpenCV', 'TensorFlow'],
-                  github: "https://github.com/..."
-                },
-                {
-                  title: "🌾 Farm Connect Platform",
-                  desc: "A full-stack agricultural platform...",
-                  tech: ['React', 'Node.js', 'MongoDB'],
-                  link: "https://farm-connect-henna.vercel.app/",
-                  LiveIcon: MdOutlineLiveTv
-                },
-                {
-                  title: "🤖 YouTube Summarizer Bot",
-                  desc: "Telegram bot for summarization...",
-                  tech: ['Python', 'NLP'],
-                  github: "https://github.com/..."
-                }
-              ];
+            <ProjectCard 
+              title="🚀 ML Facial Recognition" 
+              desc="Spearheaded hackathon team to develop a cutting-edge Machine Learning-based facial recognition model. Automated attendance, reduced errors, and streamlined check-ins significantly."
+              tech={['Python', 'OpenCV', 'TensorFlow']}
+              github="https://github.com/wellknown21st/Anti-Spoofing-Face-Recognition-Model"
+            />
+            <ProjectCard 
+              title="🌾 Farm Connect Platform" 
+              desc="A full-stack agricultural platform connecting farmers directly to buyers..."
+              tech={['React', 'Node.js', 'MongoDB', 'Sockets']}
+              github="https://farm-connect-henna.vercel.app/"
+            />
+            <ProjectCard 
+              title="🤖 YouTube Summarizer Bot" 
+              desc="An intelligent Telegram bot that instantly fetches YouTube video transcripts and uses AI to provide concise, accurate, and structured summaries on demand."
+              tech={['Python', 'Telegram API', 'NLP', 'AI']}
+              github="https://github.com/wellknown21st/telegram-youtube-bot"
+            />
           </div>
         </section>
 
