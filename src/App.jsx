@@ -358,7 +358,12 @@ function App() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_o0uw8aq', 'template_fjebk6s', formRef.current, 'rQGNt0f_Ml5QfWl6J')
+    emailjs.sendForm(
+          import.meta.env.VITE_EMAIL_SERVICE_ID,
+          import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_EMAIL_PUBLIC_KEY
+        )
       .then(() => {
           toast.success("Message sent successfully 🚀");
           formRef.current.reset();
