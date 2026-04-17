@@ -566,9 +566,10 @@ function App() {
             />
             <ProjectCard 
               title="🌾 Farm Connect Platform" 
-              desc="A full-stack agricultural platform connecting farmers directly to buyers, ensuring fair pricing, real-time market offers, and an admin verified secure ecosystem."
+              desc="A full-stack agricultural platform connecting farmers directly to buyers..."
               tech={['React', 'Node.js', 'MongoDB', 'Sockets']}
-             MdOutlineLiveTv="https://farm-connect-henna.vercel.app/"
+              liveLink="https://farm-connect-henna.vercel.app/"
+              LiveIcon={MdOutlineLiveTv}
             />
             <ProjectCard 
               title="🤖 YouTube Summarizer Bot" 
